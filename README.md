@@ -94,3 +94,15 @@ Git仓库才能对其进行处理 以及同步推送到远程仓库
 `git checkout main`
 `git merge --no-ff feature-A `  
 随后编辑器启动将feature-A分支合并到main/master主分支中
+
+合并之后，Git并不会自动删除分支，想要删除可以自己手动
+合并后要确认内容是否合并到主分支  
+确认后可以删除该分支  
+
+`git branch -d feature-A`  
+删除本地的分支  
+`git push branch origin -d feature-A`  
+删除远程仓库的分支
+
+###### 4.`get log --graph`  
+以图表形式查看分支  
