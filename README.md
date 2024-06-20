@@ -83,3 +83,14 @@ Git仓库才能对其进行处理 以及同步推送到远程仓库
 此时输入 `git branch `
 就会提示处于 **feature-A**分支中
 在开发时，可以创建一个新的分支让别人帮我们些README等一些东西，最后进行合并。方便我们共同开发
+
+###### 3.`get merge`
+
+合并分支  
+
+当我们开发完毕后，就要将这些别的分支与主分支main/master进行合并
+
+此时输入  
+`git checkout main`
+`git merge --no-ff feature-A `  
+随后编辑器启动将feature-A分支合并到main/master主分支中
